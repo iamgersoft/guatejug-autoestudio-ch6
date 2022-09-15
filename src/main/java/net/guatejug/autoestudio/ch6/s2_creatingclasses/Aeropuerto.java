@@ -21,7 +21,7 @@ class Ubicacion {
  * </ol>
  * */
  public class Aeropuerto {
-    Ubicacion ubicacion;
+    Ubicacion ubicacion = new Ubicacion();
     String nombre;
     String codigoIata;
     String codigoIcao;
