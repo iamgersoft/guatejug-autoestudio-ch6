@@ -1,10 +1,26 @@
-package net.guatejug.autoestudio.ch6.s2_creatingclasses;
+package net.guatejug.autoestudio.ch6.s3_constructors;
 
 public class Loro extends Ave {
 
     private String especie;
 
     String color;
+
+    /**
+     * Constructor Loro
+     * Se puede definir cualquier modificador de acceso al constructor:
+     * <ul>
+     *     <li><code>public Loro() {}</code></li>
+     *     <li><code>private Loro() {}</code></li>
+     *     <li><code>protected Loro() {}</code></li>
+     *     <li><code>Loro() {}</code></li>
+     * </ul>
+     * */
+    public Loro() {
+        // super();
+        // super(32, "Theo");
+        System.out.println("Constructor Loro");
+    }
 
     public String getEspecie() {
         return especie;
@@ -34,9 +50,6 @@ public class Loro extends Ave {
 
     public static void main(String[] args) {
         Loro loro = new Loro();
-        // loro.nombre = "Theo"; // No se permite porque el atributo nombre de la clase padre (Ave) es private
-        loro.setNombre("Theo");
-        loro.setTamanio(20);
         loro.setEspecie("Amazona autumnalis");
         loro.color = "verde";
         System.out.println(loro.toString());

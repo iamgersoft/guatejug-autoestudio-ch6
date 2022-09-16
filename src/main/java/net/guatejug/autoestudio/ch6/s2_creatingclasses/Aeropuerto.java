@@ -35,5 +35,6 @@ class Ubicacion {
         aeropuerto.altitud = 4952.0;
         aeropuerto.ubicacion.latitud = 14.5833;
         aeropuerto.ubicacion.longitud = -90.5275;
+        System.out.println("Aeropuerto: " + aeropuerto.codigoIcao);
     }
 }
