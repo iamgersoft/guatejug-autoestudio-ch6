@@ -12,7 +12,7 @@ public class Felino {
 
     public Felino() {
         this.tamanio = 20;
-        this.especie = "Felidae";
+        this.especie = "Felidae/";
         System.out.println("Constructor de Felino: " + this.tamanio + " - " + this.especie);
     }
 
@@ -28,9 +28,10 @@ public class Felino {
         this.especie = especie;
     }
 
+    // IOException y FileNotFoundException son checked exceptions
     // protected void rugir() throws FileNotFoundException {
     protected void rugir() throws IOException {
-
+        System.out.println("N/A");
     }
 
     public CharSequence getColor() {

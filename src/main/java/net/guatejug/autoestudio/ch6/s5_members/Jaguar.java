@@ -13,8 +13,8 @@ public class Jaguar extends Felino {
 
     // @Override
     public int getTamanio() {
-        // return getTamanio() + 90; // StackOverflowError
-        return super.getTamanio() + 90;
+        // return getTamanio() + 200; // StackOverflowError
+        return super.getTamanio() + 200;
     }
 
     // NOTA: RuntimeException es padre de IllegalArgumentException, pero
@@ -22,6 +22,7 @@ public class Jaguar extends Felino {
     // El Capítulo 11 cubre a detalle el funcionamiento de las excepciones
     public void setEspecie(String especie) throws RuntimeException {
         System.out.println("Especie: " + especie);
+        super.setEspecie(especie);
     }
 
     //public void rugir() throws IOException {
