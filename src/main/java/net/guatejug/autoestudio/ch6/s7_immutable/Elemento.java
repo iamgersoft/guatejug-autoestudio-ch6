@@ -38,7 +38,7 @@ public final class Elemento {
 
     /**
      * Método getAlotropia con copia defensiva
-     * Corrige la versión comentada en líneas anteriores de esta clase que carece de copia defensiva.
+     * Corrige la versión comentada en líneas anteriores, que carece de copia defensiva.
     * */
     public List<String> getAlotropia() {
         // ArrayList es mutable, por lo que hay que hacer copia defensiva
