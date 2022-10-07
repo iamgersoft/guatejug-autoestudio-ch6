@@ -14,7 +14,7 @@ public final class Elemento {
         this.numeroAtomico = numeroAtomico;
         this.nombre = nombre;
 
-        // ArrayList es inmutable, por lo que hay que hacer copia defensiva
+        // ArrayList es mutable, por lo que hay que hacer copia defensiva
         // this.alotropia = alotropia; // esto NO ES copia defensiva
         this.alotropia = new ArrayList<String>(alotropia); // esto SÍ ES copia defensiva
     }
@@ -28,20 +28,20 @@ public final class Elemento {
     }
 
     /* *
-     * Método SIN copia defensiva.
-     * Debería ser comentado para que Elemento sea totalmente inmutable
+     * Método getAlotropia SIN copia defensiva.
+     * Se debe usar la versión descomentada abajo para que Elemento sea totalmente inmutable
      * */
-    /* public List<String> getAlotropiaSCD() {
-        // OJO: ArrayList es inmutable. Este método rompe el principio de objeto inmutable
-        // Debería ser comentado para que Elemento sea totalmente inmutable
+    /* public List<String> getAlotropia() {
+        // OJO: ArrayList es mutable. Este método rompe el principio de objeto inmutable.
         return alotropia;
     } */
 
     /**
      * Método getAlotropia con copia defensiva
+     * Corrige la versión comentada en líneas anteriores de esta clase que carece de copia defensiva.
     * */
     public List<String> getAlotropia() {
-        // ArrayList es inmutable, por lo que hay que hacer copia defensiva
+        // ArrayList es mutable, por lo que hay que hacer copia defensiva
         return new ArrayList<String>(alotropia);
     }
 }

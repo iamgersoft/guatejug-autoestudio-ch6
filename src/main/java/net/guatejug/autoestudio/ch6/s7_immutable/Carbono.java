@@ -14,9 +14,6 @@ public class Carbono {
 
         Elemento elemento = new Elemento(6, "Carbono", alotroposCarbono);
 
-        /* Rompiendo el principio de inmutabilidad con el método getAlotropiaSCD creado para el efecto */
-        // elemento.getAlotropiaSCD().add("Ozono"); // OJO - Ozono es alótropo del oxígeno (O)
-
         // Probando a romper el principio de inmutabilidad
         elemento.getAlotropia().add("Ozono"); // OJO - Ozono es alótropo del oxígeno (O)
 
